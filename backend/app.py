@@ -19,7 +19,7 @@ print("Python version:", sys.version)
 
 app = Flask(__name__) 
 CORS(app, resources={r"/*": {"origins": "*"}})
-client = MongoClient("mongodb+srv://sr33n3sh:sreenesH4@cluster0.e62e55q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") 
+client = MongoClient("")
 db = client.twitter_data 
 collection = db.trending_topics
 @app.route('/')
